@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-bg);
+}
+.card{
+    width: 350px;
+    min-width: 350px;
+    min-height: 600px;
+    height: 600px;
+    padding: 25px;
+
+    border-radius: 15px;
+    background-color: var(--card-bg);
+    box-shadow: 0 0 31px 0 rgba(0,0,0,0.5);
+}
+.img-nfc{
+    width: 100%;
+
+    border-radius: 10px;
+}
+.description h1{
+    padding: 15px 0 15px 0;
+
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+.description p{
+    padding-bottom: 25px;
+
+    color: var(--soft-blue);
+    font-size: 18px;
+    font-weight: 300;
+}
+.balance{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--line);
+}
+.stock{
+    display: flex;
+    gap: 8px;
+    color: var(--cyan);
+    font-weight: 600;
+}
+.timeleft{
+    display: flex;
+    gap: 8px;
+    color: var(--soft-blue);
+    font-weight: 500;
+}
+.stock .img-crypto{
+    object-fit: contain;
+}
+.timeleft .img-time{
+    object-fit: contain;
+}
+.author{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.author .img-profile{
+    width: 35px;
+    border-radius: 50%;
+
+    border: 1px solid white;
+}
+.author p{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+.author p a{
+    color: white;
+}
